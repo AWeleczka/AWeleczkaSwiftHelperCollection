@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0536760921FF090400739E71 /* Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0536760721FF090400739E71 /* Extensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0536760E21FF091000739E71 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0536760D21FF091000739E71 /* UIColorExtension.swift */; };
+		0550A7AF21FF2D7E00A67F62 /* IBDesignables.h in Headers */ = {isa = PBXBuildFile; fileRef = 0550A7AD21FF2D7E00A67F62 /* IBDesignables.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0550A7B621FF2DB900A67F62 /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0550A7B521FF2DB900A67F62 /* RoundImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,10 +18,21 @@
 		0536760721FF090400739E71 /* Extensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Extensions.h; sourceTree = "<group>"; };
 		0536760821FF090400739E71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0536760D21FF091000739E71 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		0550A7AB21FF2D7E00A67F62 /* IBDesignables.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IBDesignables.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0550A7AD21FF2D7E00A67F62 /* IBDesignables.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBDesignables.h; sourceTree = "<group>"; };
+		0550A7AE21FF2D7E00A67F62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0550A7B521FF2DB900A67F62 /* RoundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		0536760221FF090400739E71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0550A7A821FF2D7E00A67F62 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,10 +52,21 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		0550A7AC21FF2D7E00A67F62 /* IBDesignables */ = {
+			isa = PBXGroup;
+			children = (
+				0550A7AD21FF2D7E00A67F62 /* IBDesignables.h */,
+				0550A7AE21FF2D7E00A67F62 /* Info.plist */,
+				0550A7B521FF2DB900A67F62 /* RoundImageView.swift */,
+			);
+			path = IBDesignables;
+			sourceTree = "<group>";
+		};
 		05CB8D0621FF065400AC5789 = {
 			isa = PBXGroup;
 			children = (
 				0536760621FF090400739E71 /* Extensions */,
+				0550A7AC21FF2D7E00A67F62 /* IBDesignables */,
 				05CB8D1121FF065400AC5789 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				0536760521FF090400739E71 /* Extensions.framework */,
+				0550A7AB21FF2D7E00A67F62 /* IBDesignables.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,6 +88,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0536760921FF090400739E71 /* Extensions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0550A7A621FF2D7E00A67F62 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0550A7AF21FF2D7E00A67F62 /* IBDesignables.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +122,26 @@
 			productReference = 0536760521FF090400739E71 /* Extensions.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		0550A7AA21FF2D7E00A67F62 /* IBDesignables */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0550A7B221FF2D7E00A67F62 /* Build configuration list for PBXNativeTarget "IBDesignables" */;
+			buildPhases = (
+				0550A7A621FF2D7E00A67F62 /* Headers */,
+				0550A7A721FF2D7E00A67F62 /* Sources */,
+				0550A7A821FF2D7E00A67F62 /* Frameworks */,
+				0550A7A921FF2D7E00A67F62 /* Resources */,
+				0550A7B321FF2D9100A67F62 /* swiftformat */,
+				0550A7B421FF2DA300A67F62 /* swiftlint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IBDesignables;
+			productName = IBDesignables;
+			productReference = 0550A7AB21FF2D7E00A67F62 /* IBDesignables.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +152,10 @@
 				ORGANIZATIONNAME = AWeleczka.de;
 				TargetAttributes = {
 					0536760421FF090400739E71 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					0550A7AA21FF2D7E00A67F62 = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1010;
 					};
@@ -117,12 +174,20 @@
 			projectRoot = "";
 			targets = (
 				0536760421FF090400739E71 /* Extensions */,
+				0550A7AA21FF2D7E00A67F62 /* IBDesignables */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		0536760321FF090400739E71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0550A7A921FF2D7E00A67F62 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -168,6 +233,42 @@
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
+		0550A7B321FF2D9100A67F62 /* swiftformat */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = swiftformat;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftformat >/dev/null; then\nswiftformat ${SRCROOT}/ --header \"//\\n//  AWeleczkaSwiftHelperCollection - https://github.com/AWeleczka/AWeleczkaSwiftHelperCollection\\n//  My \\\"private\\\" collection of helper-snippets I use way too often in projects\\n//\\n//  Readme:        https://github.com/AWeleczka/AWeleczkaSwiftHelperCollection/blob/master/README.md\\n//  License (MIT): https://github.com/AWeleczka/AWeleczkaSwiftHelperCollection/blob/master/LICENSE\\n//\\n//  Copyright (c) {year} Alexander Weleczka - https://AWeleczka.de/\\n//\" --indent 2 --self insert\nelse\necho \"warning: SwiftFormat not installed, download from https://github.com/nicklockwood/SwiftFormat\"\nfi\n";
+		};
+		0550A7B421FF2DA300A67F62 /* swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -176,6 +277,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0536760E21FF091000739E71 /* UIColorExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0550A7A721FF2D7E00A67F62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0550A7B621FF2DB900A67F62 /* RoundImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +335,57 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = de.aweleczka.swift.AWeleczkaSwiftHelperCollection.Extensions;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0550A7B021FF2D7E00A67F62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = IBDesignables/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.aweleczka.swift.AWeleczkaSwiftHelperCollection.IBDesignables;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0550A7B121FF2D7E00A67F62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = IBDesignables/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.aweleczka.swift.AWeleczkaSwiftHelperCollection.IBDesignables;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
@@ -363,6 +523,15 @@
 			buildConfigurations = (
 				0536760A21FF090400739E71 /* Debug */,
 				0536760B21FF090400739E71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0550A7B221FF2D7E00A67F62 /* Build configuration list for PBXNativeTarget "IBDesignables" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0550A7B021FF2D7E00A67F62 /* Debug */,
+				0550A7B121FF2D7E00A67F62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
