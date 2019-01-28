@@ -10,7 +10,7 @@ You can either use the entire collection (or parts) as is, drop it into your pro
 ## Alternatively you can obtain this collection through CocoaPods.  
 Note that this collection is not published on CocoaPods as it usually would be but I don't bother to setup the stuff I expect around a proper pod (CI, Coverage and so on).  
 To include this collection directly through CocoaPods you'll have to add the following line to your `Podfile`  
-`pod 'ShowYou_Logic', :git => 'https://github.com/AWeleczka/AWeleczkaSwiftHelperCollection.git'`  
+`pod 'AWeleczkaSwiftHelperCollection', :git => 'https://github.com/AWeleczka/AWeleczkaSwiftHelperCollection.git'`  
 this will instruct CocoaPods to use the `.podspec` published in the given repository.  
 (If you clone this repository you'll have to change the link of course.)
 
