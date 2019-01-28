@@ -2,8 +2,7 @@ Pod::Spec.new do |s|
   s.name = 'AWeleczkaSwiftHelperCollection'
   s.version = '0.0.1'
   s.summary = 'My "private" collection of helper-snippets I use way too often in projects'
-  s.description = <<-DESC
-                  DESC
+  s.description = "This is an every growing collection of things I use, lookup or write too often. No guarantee it always works, no guarantee it'll grow in a steady pace"
   s.homepage = 'https://github.com/AWeleczka/AWeleczkaSwiftHelperCollection.git'
   s.license = { :type => 'MIT', :file => 'LICENSE' }
   s.author = { 'AWeleczka' => 'github@accounts.aweleczka.de' }
