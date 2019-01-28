@@ -1,5 +1,5 @@
 # AWeleczkaSwiftHelperCollection
-My "private" collection of helper-snippets I use way too often in projects
+This is an every growing collection of things I use, lookup or write too often. No guarantee it always works, no guarantee it'll grow in a steady pace
 
 ---
 
