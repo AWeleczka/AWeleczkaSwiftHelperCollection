@@ -38,7 +38,7 @@ public class RoundImageView: UIView {
     }
   }
 
-  override func layoutSubviews() {
+  override public func layoutSubviews() {
     super.layoutSubviews()
 
     DispatchQueue.main.async {
