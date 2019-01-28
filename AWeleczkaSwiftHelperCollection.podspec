@@ -10,4 +10,5 @@ Pod::Spec.new do |s|
   s.social_media_url = 'https://twitter.com/AWeleczka'
   s.ios.deployment_target = '8.0'
   s.source_files = 'AWeleczkaSwiftHelperCollection/**/*'
+  s.exclude_files = 'AWeleczkaSwiftHelperCollection/**/*.plist'
 end
