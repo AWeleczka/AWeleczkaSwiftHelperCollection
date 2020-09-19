@@ -3,6 +3,11 @@ This is an every growing collection of things I use, lookup or write too often. 
 
 ---
 
+### Note
+I do not have access to a mac any longer, therefore  development on this project is on ice from my side.
+
+---
+
 # Usage
 ## Recomended is to drop it into your project
 You can either use the entire collection (or parts) as is, drop it into your project and you're good to go.
